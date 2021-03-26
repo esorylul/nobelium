@@ -1,11 +1,11 @@
 const BLOG = {
-  title: 'CRAIGARY',
-  author: 'Craig Hart',
-  email: 'i@craigary.net',
+  title: 'Tsiang',
+  author: 'Sheng Tsiang',
+  email: 'esorylul@outlook.com',
   link: 'https://nobelium.vercel.app',
   description: 'This gonna be an awesome website.',
   lang: 'en-US',
-  appearance: 'auto', // ['light', 'dark', 'auto'],
+  appearance: 'light', // ['light', 'dark', 'auto'],
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
   darkBackground: '#111827', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
@@ -13,7 +13,7 @@ const BLOG = {
   postsPerPage: 7,
   showAbout: true, // WIP
   showArchive: true, // WIP
-  socialLink: 'https://twitter.com/craigaryhart',
+  socialLink: 'https://twitter.com/esorylul',
   seo: {
     keywords: ['Blog', 'Website', 'Notion'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
