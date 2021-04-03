@@ -4,7 +4,7 @@ const BLOG = {
   email: 'esorylul@outlook.com',
   link: 'https://note.tsiang.cc',
   description: '这是一个美好的时代.',
-  lang: 'zh_CN',
+  lang: 'en_US',
   appearance: 'light', // ['light', 'dark', 'auto'],
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
   darkBackground: '#111827', // use hex value, don't forget '#'
