@@ -2,9 +2,9 @@ const BLOG = {
   title: 'Tsiang',
   author: 'Sheng Tsiang',
   email: 'esorylul@outlook.com',
-  link: 'https://nobelium.vercel.app',
-  description: 'This gonna be an awesome website.',
-  lang: 'en-US',
+  link: 'https://note.tsiang.cc',
+  description: '这是一个美好的时代.',
+  lang: 'zh_CN',
   appearance: 'light', // ['light', 'dark', 'auto'],
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
   darkBackground: '#111827', // use hex value, don't forget '#'
