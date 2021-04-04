@@ -131,11 +131,27 @@ nav {
 }
 .notion-quote {
   padding: 0.2em 0.9em;
+  font-size: 16px;
+  text-indent: 0 !important;
 }
 .notion-collection-row{
   @apply hidden
 }
-
+.notion {
+  text-indent: 2em;
+}
+.notion-h {
+  text-indent: 0 !important;
+  margin: 10px auto;
+}
+.notion-list {
+  text-indent: 0 !important;
+  margin: 0 !important;
+  margin-left: 3em !important;
+}
+.notion-code {
+  text-indent: 0 !important;
+}
 @media (min-width: 768px) {
   .sticky-nav-full {
     @apply max-w-full border-b border-opacity-50 border-gray-200 dark:border-gray-600 dark:border-opacity-50;

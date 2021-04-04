@@ -64,6 +64,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
           <Link href="/">
             <div className="h-6">
               {/* <Image src="/logo.svg" width={24} height={24} alt={BLOG.author} /> */}
+              {/*
               <svg
                 width="24"
                 height="24"
@@ -77,6 +78,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
                 <desc id="logoDesc">{BLOG.author}</desc>
                 <rect width="24" height="24" className="fill-current text-black dark:text-white" />
               </svg>
+              */}
             </div>
           </Link>
           {navBarTitle

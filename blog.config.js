@@ -1,8 +1,8 @@
 const BLOG = {
-  title: 'Tsiang',
-  author: 'Sheng Tsiang',
+  title: '一叶文学',
+  author: '黄盛强',
   email: 'esorylul@outlook.com',
-  link: 'https://note.tsiang.cc',
+  link: 'https://life.tsiang.cc',
   description: '这是一个美好的时代.',
   lang: 'zh-CN',
   appearance: 'light', // ['light', 'dark', 'auto'],

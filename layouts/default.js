@@ -32,47 +32,17 @@ const DefaultLayout = ({ children, blockMap, frontMatter }) => {
       type="article"
     >
       <article>
-        <h1 className="font-sans font-bold text-3xl text-black dark:text-white">
+        <h1 className="font-sans mt-10 font-bold text-3xl text-black text-center dark:text-white">
           {frontMatter.title}
         </h1>
-        {frontMatter.type !== 'Page' && (
-          <nav className="flex mt-4 mb-1 items-center font-medium text-gray-600 dark:text-gray-400">
-            <div className="flex">
-              <a href={BLOG.socialLink || '#'} className="flex">
-                <Image
-                  alt={BLOG.author}
-                  width={24}
-                  height={24}
-                  src="/avatar.svg"
-                  className="rounded-full"
-                />
-                <p className="hidden md:ml-2 md:block">{BLOG.author}</p>
-              </a>
-              <span className="hidden md:inline">&nbsp;/&nbsp;</span>
-            </div>
-            <div className="mx-2 md:ml-0">
-              {formatDate(frontMatter.date, BLOG.lang)}
-            </div>
-            {frontMatter.tags && (
-              <div className="flex flex-wrap">
-                {frontMatter.tags.map(tag => (
-                  <p
-                    key={tag}
-                    className="mr-1 cursor-pointer"
-                    onClick={() =>
-                      router.push(`/tag/${encodeURIComponent(tag)}`)
-                    }
-                  >
-                    #{tag}
-                  </p>
-                ))}
-              </div>
-            )}
-          </nav>
-        )}
-        {children}
-        {blockMap && (
-          <div className="text-gray-700 dark:text-gray-300">
+        <div className="flex mb-20 justify-center text-center mt-5">
+          <p>作者</p>
+          <a href={BLOG.socialLink || '#'} className="flex">
+            <p className="hidden md:ml-2 md:block">{BLOG.author}</p>
+          </a>
+        </div>
+       {children}
+          <div className="text-gray-700 mb-20 dark:text-gray-300">
             <NotionRenderer
               recordMap={blockMap}
               components={{
@@ -82,8 +52,29 @@ const DefaultLayout = ({ children, blockMap, frontMatter }) => {
               }}
             />
           </div>
-        )}
       </article>
+      {frontMatter.type !== 'Page' && (
+        <nav className="flex text-gray-500 justify-between mt-2 mb-4 items-center font-medium text-gray-600 dark:text-gray-400">
+          <div className="mx-2 md:ml-0">
+            {formatDate(frontMatter.date, BLOG.lang)}
+          </div>
+          {frontMatter.tags && (
+            <div className="flex flex-wrap inset-x-1">
+              {frontMatter.tags.map(tag => (
+                <p
+                  key={tag}
+                  className="mr-1 cursor-pointer"
+                  onClick={() =>
+                    router.push(`/tag/${encodeURIComponent(tag)}`)
+                  }
+                >
+                  &nbsp;#{tag}
+                </p>
+              ))}
+            </div>
+          )}
+        </nav>
+      )}
       <div className="flex justify-between font-medium text-black dark:text-gray-100">
         <button
           onClick={() => router.push(BLOG.path || '/')}
