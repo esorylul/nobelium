@@ -36,7 +36,6 @@ const DefaultLayout = ({ children, blockMap, frontMatter }) => {
           {frontMatter.title}
         </h1>
         <div className="flex mb-20 justify-center text-center mt-5">
-          <p>作者</p>
           <a href={BLOG.socialLink || '#'} className="flex">
             <p className="hidden md:ml-2 md:block">{BLOG.author}</p>
           </a>
