@@ -5,7 +5,7 @@ const BLOG = {
   link: 'https://life.tsiang.cc',
   description: '这是一个美好的时代.',
   lang: 'zh-CN',
-  appearance: 'light', // ['light', 'dark', 'auto'],
+  appearance: 'auto', // ['light', 'dark', 'auto'],
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
   darkBackground: '#111827', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
